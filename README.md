@@ -1,39 +1,49 @@
 ---
-title: PUNNARAJ
+id: pub-20260707-root
+created: 2026-07-07
+title: PUNNARAJ Public Mutual Understanding
 type: project-root
-version: 0.01
+version: 0.02
 aliases:
   - PUNNARAJ
   - index
   - home_page
+  - mutual_understanding
 ---
 
-[[PUNNARAJ]]
+# PUNNARAJ Public Mutual Understanding
 
----
+This repository is a public, low-sensitivity working surface for PUNNARAJ shared understanding.
 
-## What [[PUNNARAJ]] Is?
+It is not the root of PUNNARAJ. It is not ZERO. It is not a final doctrine.
 
->It is not only a vault, and not only a website, and not only an automation stack.
->
-It is a structured environment for:
+Purpose:
 
-- preserving raw source material
-- deriving structured knowledge from that material
-- maintaining stable identities and references
-- supporting multi-system operation across local and cloud environments
-- reducing recap, ambiguity, and context loss over time
+- keep a simple public page that humans and agents can inspect
+- preserve current working meanings of key PUNNARAJ terms
+- use plain files that can be moved, mirrored, rebuilt, or replaced
+- avoid custom infrastructure until the structure proves useful
 
----
+Current minimum record rule:
 
-## Core Intent
+```yaml
+id:
+created:
+```
 
-[[PUNNARAJ]] is designed to support:
+Every extra field must earn its existence by solving a repeated real problem.
 
-- durable memory without depending on a single model
-- structured reference across projects and systems
-- separation of truth, interpretation, and publication
-- long-term maintainability through explicit folder roles
-- a private-first architecture that can still project selected surfaces publicly
+## Files
 
----
+- `index.html` — public landing page / shared reference
+- `docs/MUTUAL_UNDERSTANDING.md` — current mutual-understanding snapshot
+- `docs/INGEST_MINIMUM.md` — minimum document/record rule
+- `.nojekyll` — lets static hosting serve files directly
+
+## Working stance
+
+PUNNARAJ does not preserve fixed final truth. It preserves inspectable records, links, context, provenance, corrections, and the ability to revise understanding.
+
+## Status
+
+Experimental public scaffold. Safe to replace, revise, or archive if it stops being useful.
