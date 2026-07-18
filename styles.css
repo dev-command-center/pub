@@ -1,1 +1,62 @@
-:root{color-scheme:dark;--bg:#06070a;--panel:#11151c;--text:#e7edf7;--muted:#94a3b8;--line:#263244;--accent:#d6b46a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#172033,#06070a 55%);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}main{max-width:1120px;margin:0 auto;padding:56px 22px}.hero{padding:72px 0 42px}.mark{width:54px;height:54px;border:1px solid var(--accent);border-radius:16px;display:grid;place-items:center;color:var(--accent);font-weight:800;font-size:26px}.eyebrow{color:var(--accent);letter-spacing:.18em;text-transform:uppercase;font-size:13px;margin-top:24px}h1{font-size:clamp(52px,10vw,120px);line-height:.9;margin:12px 0 22px;letter-spacing:-.06em}.lead{max-width:760px;color:#cbd5e1;font-size:clamp(18px,2.4vw,26px)}nav,.doclinks{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}a{color:var(--text);text-decoration:none;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:10px 14px;border-radius:999px}a:hover{border-color:var(--accent);color:var(--accent)}.panel,.cards article,.source{border:1px solid var(--line);background:rgba(17,21,28,.82);border-radius:28px;padding:28px;margin:22px 0;box-shadow:0 20px 70px rgba(0,0,0,.25)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}.cards article{margin:0}h2{font-size:30px;margin:0 0 14px}h3{font-size:21px;margin:0 0 10px;color:#f8fafc}p,li{color:var(--muted)}strong{color:#f8fafc}code{color:var(--accent)}@media(max-width:760px){main{padding:32px 16px}.cards{grid-template-columns:1fr}.hero{padding-top:42px}}
+:root { color-scheme: light dark; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; max-width: 920px; margin: 0 auto; padding: 32px 20px; }
+header { border-bottom: 1px solid currentColor; margin-bottom: 28px; padding-bottom: 16px; }
+h1, h2 { line-height: 1.2; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.meta { opacity: .72; }
+.card { border: 1px solid currentColor; border-radius: 12px; padding: 16px; margin: 16px 0; }
+ul { padding-left: 1.25rem; }
+
+:root {
+  --page-max: 72rem;
+  --reading-max: 46rem;
+  --learning-accent: #2563eb;
+  --accent-soft: color-mix(in srgb, var(--learning-accent) 12%, transparent);
+  --border: color-mix(in srgb, currentColor 22%, transparent);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+.learning-page { max-width: var(--page-max); }
+a { text-underline-offset: 0.18em; }
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--learning-accent);
+  outline-offset: 3px;
+}
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  padding: 0.65rem 0.9rem;
+  color: Canvas;
+  background: CanvasText;
+  z-index: 10;
+}
+.skip-link:focus { top: 1rem; }
+.site-header, .site-footer { border-color: var(--border); }
+.breadcrumbs ul, .learning-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  list-style: none;
+  padding: 0;
+}
+.breadcrumbs li:not(:last-child)::after { content: "/"; margin-left: 1rem; opacity: 0.5; }
+.reading { max-width: var(--reading-max); }
+.eyebrow, .status { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.status { display: inline-block; border: 1px solid var(--border); border-radius: 999px; padding: 0.2rem 0.55rem; }
+.lesson-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+.lesson-card { border: 1px solid var(--border); border-radius: 0.8rem; padding: 1rem; background: var(--accent-soft); }
+.lesson-card > :first-child { margin-top: 0; }
+.metric-table { width: 100%; border-collapse: collapse; }
+.metric-table th, .metric-table td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); padding: 0.65rem; }
+.cycle { border-left: 0.3rem solid var(--learning-accent); padding-left: 1rem; }
+.source-statement { font-size: clamp(1.2rem, 3vw, 1.8rem); line-height: 1.45; }
+.site-footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1rem; opacity: 0.78; }
+@media (max-width: 40rem) {
+  body { padding: 1.25rem 1rem; }
+  .metric-table { display: block; overflow-x: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

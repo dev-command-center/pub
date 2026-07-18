@@ -43,7 +43,31 @@ Every extra field must earn its existence by solving a repeated real problem.
 - `docs/INGEST_MINIMUM.md` — minimum document/record rule
 - `docs/OPERATING_MODEL.md` — current operating model summary
 - `docs/ORG_IDENTITY.md` — current GitHub organization role and boundary
+- `learning/index.html` — public learning root
+- `learning/method/index.html` — learning method
+- `learning/lessons/index.html` — public lesson index
+- `learning/lessons/001-shared-understanding-discontinuity/index.html` — Lesson 001
+- `learning/skills/index.html` — working-skill index
+- `learning/skills/shared-understanding-gateway/index.html` — public skill evolution record
+- `learning/measurement/index.html` — recurrence measures
+- `learning/use-this-method/index.html` — reuse guide
 - `.nojekyll` — lets static hosting serve files directly
+
+## Learning from Work
+
+`learning/` is a public, sanitized learning root. It turns observed work
+failures into reusable lessons, changes to working skills, and recurrence
+measures. It does not publish private journals, raw transcripts, account
+identifiers, credentials, or private operational paths.
+
+The first release contains Lesson 001 — Shared Understanding Discontinuity and
+the public evolution record for `shared-understanding-gateway` version `0.1.0`.
+
+Run the static-site contract before publication:
+
+```bash
+python3 -m unittest tests/test_learning_site.py -v
+```
 
 ## Working stance
 

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Measurement · PUNNARAJ</title>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body class="learning-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <p class="eyebrow"><a href="../../">PUNNARAJ Public Mutual Understanding</a></p>
+    <nav class="learning-nav" aria-label="Learning navigation">
+      <ul>
+        <li><a href="../">Learning home</a></li>
+        <li><a href="../method/">Method</a></li>
+        <li><a href="../lessons/">Lessons</a></li>
+        <li><a href="../skills/">Skill evolution</a></li>
+        <li><a href="./" aria-current="page">Measurement</a></li>
+        <li><a href="../use-this-method/">Use this method</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="../../">Home</a></li>
+      <li><a href="../">Learning from Work</a></li>
+      <li>Measurement</li>
+    </ul>
+  </nav>
+  <main id="main">
+    <p class="eyebrow">Learning from Work · measurement</p>
+    <h1>Evidence of sharpening</h1>
+    <p class="reading">Use these measures to make recurrence visible. An unknown value is an instrumentation gap, not evidence to fill in.</p>
+    <section aria-labelledby="metrics-title">
+      <h2 id="metrics-title">Common measures</h2>
+      <table class="metric-table">
+        <thead>
+          <tr><th scope="col">Measure</th><th scope="col">Definition</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row"><code>unshared_interval_minutes</code></th><td>Minutes since the last meaningful shared checkpoint; unknown when not instrumented.</td></tr>
+          <tr><th scope="row"><code>material_steps_since_checkpoint</code></th><td>Material steps taken after the last shared checkpoint.</td></tr>
+          <tr><th scope="row"><code>detection_phase</code></th><td>before-decision, before-action, after-action, or owner-detected.</td></tr>
+          <tr><th scope="row"><code>owner_reconstruction_needed</code></th><td>Whether the owner had to rebuild the missing causal path.</td></tr>
+          <tr><th scope="row"><code>prevented_material_action</code></th><td>Whether the gate stopped a material action before shared understanding was restored.</td></tr>
+          <tr><th scope="row"><code>recurrence_count</code></th><td>Number of linked recurrences after lesson activation.</td></tr>
+          <tr><th scope="row"><code>time_to_detection_minutes</code></th><td>Elapsed minutes from recurrence start to detection; unknown when not instrumented.</td></tr>
+          <tr><th scope="row"><code>impact_level</code></th><td>Observed impact on the common 0–3 scale.</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section aria-labelledby="impact-title">
+      <h2 id="impact-title">Impact scale</h2>
+      <table class="metric-table">
+        <thead>
+          <tr><th scope="col">Level</th><th scope="col">Meaning</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>0</td><td>No shared-state action occurred before understanding was restored.</td></tr>
+          <tr><td>1</td><td>Reversible local effect.</td></tr>
+          <tr><td>2</td><td>Shared state changed and required recovery.</td></tr>
+          <tr><td>3</td><td>Irreversible effect, exposure, or evidence loss.</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="reading" aria-labelledby="comparison-title">
+      <h2 id="comparison-title">Compare with evidence</h2>
+      <p><strong>Comparison rule:</strong> claim improvement only when evidence shows earlier detection, lower impact, less owner reconstruction, or lower prevention cost without weaker protection. A higher version number alone is not improvement.</p>
+    </section>
+    <nav aria-label="Related learning pages">
+      <ul>
+        <li><a href="../lessons/001-shared-understanding-discontinuity/">Lesson 001: Shared Understanding Discontinuity</a></li>
+        <li><a href="../use-this-method/">Use this method</a></li>
+      </ul>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <p>Accepted-for-now understanding. Open to correction and evidence-led revision.</p>
+  </footer>
+</body>
+</html>
